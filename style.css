@@ -1,0 +1,58 @@
+.header{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+.header{
+    width:100%;
+    height:125vh;
+    background-size:cover;
+    background-position:center;
+}
+.welcome h1{
+    margin-top:150px;
+}
+.welcome button{
+    background-color:transparent;
+    color:white;
+}
+.welcome button:hover{
+    color:black;
+    background-color: rgb(30, 224, 215);
+}
+.staff{
+    width:25%;
+}
+@media screen and (min-width:100px) and (max-width:700px){
+    .staff{
+        width:50%
+    }
+}
+.staff1 .img{
+    height:5cm;
+}
+/* new */
+
+.navs ul li{
+    margin-top:-40px;
+    position:relative;
+}
+.navs ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+.navs ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    margin-left:0px;
+    background:rgb(0, 238, 255);
+    position:absolute;
+    transition:0.4s;
+    left:1px;
+    bottom:-2px;
+}
+.navs ul li:hover::after{
+    width:100%;
+}
